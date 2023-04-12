@@ -1,0 +1,22 @@
+<div class="recipes">
+  <% for (const [key, value] of Object.entries(recipes)) { %>
+  <dl>
+    <dt style="margin-bottom: 10px; margin-top: 40px" class="pt-1">
+      <%- value.title %>
+    </dt>
+    <dd>
+      <img
+        src="img/thai-food.jpg"
+        width="350px"
+        height="300px"
+        alt=""
+        style="float: left"
+      />
+    </dd>
+    <dd class="pt-1"><%-value.prep_time%></dd>
+    <dd class="pt-1"><%-value.ingredients%></dd>
+    <dd class="pt-1"><%-value.instructions%></dd>
+    <br />
+  </dl>
+  <% } %>
+</div>

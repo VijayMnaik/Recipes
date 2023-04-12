@@ -1,0 +1,37 @@
+<div style="min-height: 650px;">
+<h1 class="pb-4">Recipe Recommendation</h1>
+
+  <div class="col-8">
+    <form action="/ingrd" enctype="multipart/form-data" method="POST">
+      <div class="ingredientList">
+        <div class="col-12 ingredientDiv">
+        <label for="image">Ingredient Image</label>
+        <input
+          type="file"
+          class="form-control"
+          name="image1"
+          accept="image/*"
+        />
+       </div>
+    </div>
+  </div>
+      <br>
+  <div class="col-12">
+        <button
+          type="button"
+          class="btn btn-outline-primary"
+          id="addIngredientsBtn"
+        >
+          + Ingredient
+        </button>
+  </div>
+      <br>
+      <br>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Submit Recipe</button>
+      </div>
+   
+  </form>
+
+</div>

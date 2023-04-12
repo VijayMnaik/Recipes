@@ -1,0 +1,26 @@
+<div style="min-height: 650px">
+  <div class="ingrd">
+    <% for(var i in ingredients) { %>
+    <div>
+      <figure style="text-align: center">
+        <img
+          width="250px"
+          height="250px"
+          style="border: 2px solid black"
+          src="<%= `uploads/${imgarray[i]}` %>"
+        />
+        <figcaption><%= ingredients[i] %></figcaption>
+      </figure>
+    </div>
+    <% } %>
+  </div>
+  <form action="/recom" method="post">
+    <button
+      type="submit"
+      class="btn btn-primary"
+      style="float: right; margin-right: 100px; margin-top: 50px"
+    >
+      View Recommendation
+    </button>
+  </form>
+</div>
